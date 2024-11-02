@@ -28,3 +28,6 @@ app.listen(PORT, () => {
 const footballRoutes = require('./routes/footballRoutes')
 
 app.use('/api/football', footballRoutes)
+
+const cors = require('cors');
+app.use(cors());
