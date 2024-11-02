@@ -24,3 +24,7 @@ const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
+
+const footballRoutes = require('./routes/footballRoutes')
+
+app.use('/api/football', footballRoutes)
